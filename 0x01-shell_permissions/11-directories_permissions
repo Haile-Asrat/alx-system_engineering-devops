@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R ugo+X hello
+find . -type d ! -perm -o=x -exec chmod +x {} \;
